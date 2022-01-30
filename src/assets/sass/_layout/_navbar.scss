@@ -43,6 +43,9 @@
 	.btn--base {
 		min-width: 109px;
 		padding: 7px 20px;
+		font-size: 14px;
+		font-weight: 400;
+		@include border-radius(16px)
 	}
 }
 .language--group {

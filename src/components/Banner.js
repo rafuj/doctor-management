@@ -1,8 +1,12 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import apple__store from "../assets/images/banner/apple__store.png";
 import images from "../assets/images/banner/banner.png";
+import play__store from "../assets/images/banner/play__store.png";
 import shapes1 from "../assets/images/banner/vector1.png";
 import shapes2 from "../assets/images/banner/vector2.png";
+import AppBtn from "./AppBtn";
+
 const Banner = () => {
 	return (
 		<section className="banner-section overflow-hidden">
@@ -24,6 +28,11 @@ const Banner = () => {
 								Advice from a Specialist.
 							</p>
 							<Button className="btn--base">Search For a Service</Button>
+
+							<div className="app__btns">
+								<AppBtn image={play__store} link="/" />
+								<AppBtn image={apple__store} link="/" />
+							</div>
 						</div>
 					</Col>
 					<Col sm={12} md={6} lg={5}>
