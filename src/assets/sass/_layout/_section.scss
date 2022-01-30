@@ -5,7 +5,11 @@
 	position: relative;
 	z-index: 1;
 	&.text-center {
-		max-width: 532px;
+		.section__text {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 532px;
+		}
 	}
 	.section__title {
 		margin-bottom: 12px;
@@ -27,6 +31,9 @@
 	}
 	@include breakpoint(max-xxl) {
 		right: calc(50% + 180px);
+		@include breakpoint(xl) {
+			bottom: -54px;
+		}
 	}
 	@include breakpoint(xxl) {
 		right: calc(50% + 260px);
@@ -38,7 +45,6 @@
 .about__thumb {
 	position: relative;
 	z-index: 1;
-	direction: rtl;
 	@include breakpoint(max-md) {
 		max-width: 450px;
 		margin: 0 auto;
@@ -47,11 +53,32 @@
 		}
 	}
 }
+.rtl {
+	direction: rtl;
+}
+.ltr {
+	direction: ltr;
+}
 .about__content {
-	p {
-	}
 	.btn--base {
 		margin-top: 20px;
 	}
+	&.style__two {
+		max-width: 502px;
+	}
 }
 /*About Section Ends*/
+/*Video Consultation Section Starts*/
+.video__shape {
+	position: absolute;
+	bottom: 60px;
+	right: 0;
+	max-height: 100%;
+	left: calc(50% - 1px);
+	img {
+		width: 100%;
+		max-height: 100%;
+		object-fit: cover;
+	}
+}
+/*Video Consultation Section Ends*/

@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./components/About";
 import Banner from "./components/Banner";
 import NavBar from "./components/NavBar";
+import VideoConsultation from "./components/VideoConsultation";
 
 const App = () => {
 	return (
@@ -9,6 +10,7 @@ const App = () => {
 			<NavBar />
 			<Banner />
 			<About />
+			<VideoConsultation />
 		</>
 	);
 };

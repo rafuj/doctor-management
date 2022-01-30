@@ -8,11 +8,13 @@
 	@include border-radius(22px);
 	padding: 12px 40px;
 	font-weight: 500;
-	font-size: 18px;
 	&:hover,
 	&:focus {
 		color: $base;
 		border-color: $base;
 		background: transparent;
+	}
+	@include breakpoint(sm) {
+		font-size: 18px;
 	}
 }
