@@ -1,15 +1,7 @@
 import React from "react";
-import {
-	Button,
-	Container,
-	Form,
-	InputGroup,
-	Nav,
-	Navbar,
-	NavDropdown,
-} from "react-bootstrap";
-import { GrGlobe } from "react-icons/gr";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import logo from "../assets/images/logo.png";
+import NavbarRightButtons from "./NavbarRightButtons";
 const NavBar = () => {
 	return (
 		<header className="nav-header">
@@ -19,23 +11,7 @@ const NavBar = () => {
 						<img src={logo} alt="logo" />
 					</Navbar.Brand>
 					<div className="d-flex d-xl-none align-items-center me-3 ms-auto">
-						<form>
-							<InputGroup className="language--group">
-								<span className="icon">
-									<GrGlobe />
-								</span>
-								<Form.Select size="sm">
-									<option>En</option>
-									<option>Bn</option>
-									<option>In</option>
-									<option>Pk</option>
-									<option>Us</option>
-								</Form.Select>
-							</InputGroup>
-						</form>
-						<Button href="/" className="btn--base">
-							Login
-						</Button>
+						<NavbarRightButtons />
 					</div>
 					<Navbar.Toggle
 						className="shadow-none"
@@ -82,23 +58,7 @@ const NavBar = () => {
 							<Nav.Link href="#faq">FAQ</Nav.Link>
 						</Nav>
 						<Nav className="align-items-center d-none d-xl-flex">
-							<form>
-								<InputGroup className="language--group">
-									<span className="icon">
-										<GrGlobe />
-									</span>
-									<Form.Select size="sm">
-										<option>En</option>
-										<option>Bn</option>
-										<option>In</option>
-										<option>Pk</option>
-										<option>Us</option>
-									</Form.Select>
-								</InputGroup>
-							</form>
-							<Button href="/" className="btn--base">
-								Login
-							</Button>
+							<NavbarRightButtons />
 						</Nav>
 					</Navbar.Collapse>
 				</Container>
