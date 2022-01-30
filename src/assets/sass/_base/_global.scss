@@ -1,0 +1,7 @@
+.container {
+	@include breakpoint(xl) {
+		max-width: 1170px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
