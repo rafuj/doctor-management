@@ -1,0 +1,104 @@
+html {
+	font-size: 14px;
+	scroll-behavior: smooth;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	color: $body-color;
+	line-height: 24px;
+	overflow-x: hidden;
+	font-family: $body;
+	background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+	margin: 0;
+	line-height: 1.2;
+	color: $title;
+	font-family: $heading;
+	a {
+		color: $title;
+		&:hover {
+			color: $base;
+		}
+	}
+}
+h1 {
+	font-size: 40px;
+}
+h2 {
+	font-size: 28px;
+	margin-top: -9px;
+}
+h3 {
+	font-size: 24px;
+	margin-top: -8px;
+}
+h4 {
+	font-size: 22px;
+	margin-top: -5px;
+}
+h5 {
+	font-size: 20px;
+	margin-top: -4px;
+}
+h6 {
+	font-size: 18px;
+	line-height: 21.94px;
+	margin-top: -6px;
+}
+p {
+	margin-top: -9px;
+	&:last-child {
+		margin-bottom: -7px !important;
+	}
+}
+@include breakpoint(md) {
+	h1 {
+		font-size: 50px;
+		line-height: 65px;
+	}
+	h2 {
+		font-size: 36px;
+		line-height: 43.88px;
+	}
+	h3 {
+		font-size: 30px;
+		line-height: 36.5px;
+		margin-top: -9px;
+	}
+	h4 {
+		font-size: 24px;
+		line-height: 29.26px;
+		margin-top: -8px;
+	}
+	h5 {
+		font-size: 20px;
+		line-height: 24.38px;
+		margin-top: -7px;
+	}
+}
+a {
+	display: inline-block;
+	@include transition($transition);
+	&:hover {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+ul {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+	}
+}

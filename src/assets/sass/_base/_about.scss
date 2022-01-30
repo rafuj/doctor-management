@@ -1,0 +1,57 @@
+%pr {
+	position: relative;
+}
+%pa {
+	position: absolute;
+	content: "";
+}
+%flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+%center {
+	top: 50%;
+	left: 50%;
+	@include transform(translate(-50%, -50%));
+	position: absolute;
+	content: "";
+}
+
+.pt-80 {
+	padding-top: 80px;
+}
+.pb-80 {
+	padding-bottom: 80px;
+}
+.pt-100 {
+	padding-top: 70px;
+}
+.pb-100 {
+	padding-bottom: 70px;
+}
+.pt-50 {
+	padding-top: 35px;
+}
+.pb-50 {
+	padding-bottom: 35px;
+}
+@include breakpoint(lg) {
+	.pt-100 {
+		padding-top: 100px;
+	}
+	.pb-100 {
+		padding-bottom: 100px;
+	}
+	.pt-50 {
+		padding-top: 50px;
+	}
+	.pb-50 {
+		padding-bottom: 50px;
+	}
+}
+.rtl {
+	direction: rtl;
+}
+.ltr {
+	direction: ltr;
+}
