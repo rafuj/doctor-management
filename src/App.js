@@ -3,6 +3,7 @@ import About from "./components/About";
 import Banner from "./components/Banner";
 import Feature from "./components/Feature";
 import NavBar from "./components/NavBar";
+import Steps from "./components/Steps";
 import VideoConsultation from "./components/VideoConsultation";
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
 			<About />
 			<VideoConsultation />
 			<Feature />
+			<Steps />
 		</>
 	);
 };

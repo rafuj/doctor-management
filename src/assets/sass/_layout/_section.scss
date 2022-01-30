@@ -106,3 +106,54 @@
 	}
 }
 /*Feature Section Ends Here*/
+/*Step Section Starts Here*/
+.step__shapes {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: calc(50% + 40px);
+	img {
+		width: 100%;
+		max-width: 526px;
+		@include breakpoint(xxl) {
+			max-width: 680px;
+		}
+	}
+}
+.step__item {
+	display: flex;
+	&-serial {
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		@include border-radius(50%);
+		background: $base;
+		color: $white;
+		font-weight: 600;
+		font-size: 24px;
+	}
+	&-content {
+		width: calc(100% - 40px);
+		padding-left: 22px;
+		&-title {
+			margin-bottom: 10px;
+		}
+		p {
+			max-width: 412px;
+		}
+	}
+	&:not(:last-child) {
+		margin-bottom: 30px;
+	}
+}
+.step__thumb {
+	text-align: center;
+	@include breakpoint(max-md) {
+		margin: 0 auto;
+		img {
+			max-width: 200px;
+		}
+	}
+}
+/*Step Section Ends Here*/

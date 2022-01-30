@@ -13,15 +13,16 @@ const Feature = () => {
 				text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
 			/>
 			<Row className="justify-content-center gy-4">
-				{data.map((item, index) => (
-					<Col sm={6} lg={3} key={index}>
-						<FeatureItem
-							title={item.title}
-							text={item.text}
-							icon={item.icon}
-						/>
-					</Col>
-				))}
+				{data &&
+					data.map((item, index) => (
+						<Col sm={6} lg={3} key={index}>
+							<FeatureItem
+								title={item.title}
+								text={item.text}
+								icon={item.icon}
+							/>
+						</Col>
+					))}
 			</Row>
 		</Section>
 	);
