@@ -3,6 +3,7 @@ import About from "./components/About";
 import Banner from "./components/Banner";
 import CallToAction from "./components/CallToAction";
 import ExpertDoctors from "./components/ExpertDoctors";
+import Faqs from "./components/Faqs";
 import Feature from "./components/Feature";
 import NavBar from "./components/NavBar";
 import PopularFarmacy from "./components/PopularFarmacy";
@@ -23,6 +24,7 @@ const App = () => {
 			<Services />
 			<ExpertDoctors />
 			<CallToAction />
+			<Faqs />
 		</>
 	);
 };

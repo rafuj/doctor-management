@@ -38,7 +38,7 @@ const CallToAction = () => {
 						</Button>
 					</div>
 				</Col>
-				<Col md={6} lg={5}>
+				<Col md={6} xl={5}>
 					<div className="about__thumb">
 						<img src={ctaThumb} alt="about" />
 					</div>

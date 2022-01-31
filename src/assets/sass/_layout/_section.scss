@@ -271,21 +271,127 @@
 	position: absolute;
 	right: 0;
 	left: calc(50% + 410px);
-	bottom: -130px;
+	bottom: 0;
 	img {
 		min-width: 100%;
 	}
 	@include breakpoint(max-xxl) {
 		left: calc(50% + 180px);
 		@include breakpoint(xl) {
-			bottom: -54px;
+			bottom: -40px;
 		}
 	}
 	@include breakpoint(xxl) {
 		left: calc(50% + 260px);
+		max-height: 600px;
+		bottom: 0;
 	}
 	@include breakpoint(max-md) {
 		display: none;
 	}
 }
 /*CTAs Section Ends Here*/
+/*Faqs Section Starts Here*/
+.faq__shape {
+	position: absolute;
+	left: 0;
+	right: calc(50% + 410px);
+	bottom: 0;
+	text-align: center;
+	img {
+		min-width: 100%;
+	}
+	@include breakpoint(max-xxl) {
+		right: calc(50% + 180px);
+	}
+	@include breakpoint(xxl) {
+		right: calc(50% + 260px);
+	}
+	@include breakpoint(max-md) {
+		display: none;
+	}
+}
+.faq__thumb {
+	text-align: center;
+	img {
+		max-width: 100%;
+	}
+}
+.faq__item {
+	border-bottom: 1px solid $border-color;
+	padding: 12px 0;
+	&-title {
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+		cursor: pointer;
+		.icon {
+			margin-left: 10px;
+		}
+	}
+	&-content {
+		max-width: 482px;
+		padding: 5px 0;
+	}
+}
+.accordion-item {
+	border: none;
+	border-bottom: 1px solid $border-color;
+	@include border-radius(0 !important);
+	.accordion-header {
+		padding: 0;
+		background: transparent !important;
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+		cursor: pointer;
+		border: none;
+		button {
+			box-shadow: none !important;
+			font-size: 18px;
+			font-weight: 500;
+			background: transparent !important;
+			padding: 1px 0;
+			color: $title !important;
+			&::after {
+				display: none;
+			}
+			.icon {
+				background: transparent;
+				width: 16px;
+				height: 16px;
+				border: 1px solid $title;
+				@include border-radius(50%);
+				margin-left: auto;
+				position: relative;
+				&::before,
+				&::after {
+					content: "";
+					@extend %center;
+					background: $title;
+					@include border-radius(1px);
+				}
+				&::before {
+					width: 1px;
+					height: 7px;
+				}
+				&::after {
+					height: 1px;
+					width: 7px;
+				}
+			}
+		}
+		button[aria-expanded="true"] {
+			.icon {
+				&::before {
+					display: none;
+				}
+			}
+		}
+	}
+	.accordion-body {
+		max-width: 482px;
+		padding: 0 0 18px !important;
+	}
+}
+/*Faqs Section Ends Here*/
