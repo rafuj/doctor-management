@@ -317,23 +317,6 @@
 		max-width: 100%;
 	}
 }
-.faq__item {
-	border-bottom: 1px solid $border-color;
-	padding: 12px 0;
-	&-title {
-		margin: 0;
-		display: flex;
-		justify-content: space-between;
-		cursor: pointer;
-		.icon {
-			margin-left: 10px;
-		}
-	}
-	&-content {
-		max-width: 482px;
-		padding: 5px 0;
-	}
-}
 .accordion-item {
 	border: none;
 	border-bottom: 1px solid $border-color;

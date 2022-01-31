@@ -20,7 +20,7 @@ const ExpertDoctors = () => {
 								{item &&
 									item.map((subitem, subitemIndex) => (
 										<li key={subitemIndex}>
-											<a href="#0">
+											<a href={subitem.url}>
 												<FaAngleDoubleRight /> {subitem.name}
 											</a>
 										</li>
