@@ -1,7 +1,6 @@
 /*Section Header Starts*/
 .section__header {
 	margin-bottom: 30px;
-	text-align: center;
 	position: relative;
 	z-index: 1;
 	&.text-center {
@@ -223,3 +222,47 @@
 	}
 }
 /*Service Section Ends Here*/
+/*Doctor Section Starts Here*/
+.doctor__listing {
+	li {
+		a {
+			color: $title;
+			text-decoration: none;
+			font-weight: 500;
+			svg {
+				fill: $base;
+				@include transition($transition);
+			}
+			@include breakpoint(xl) {
+				font-size: 18px;
+				line-height: 28px;
+				text-transform: capitalize;
+			}
+			&:hover {
+				color: $base;
+				svg {
+					@include transform(translateX(5px));
+				}
+			}
+		}
+		&:not(:last-child) {
+			margin-bottom: 8px;
+		}
+	}
+}
+.doctor__listing-wrapper {
+	@include breakpoint(lg) {
+		justify-content: space-between;
+		> div {
+			width: unset;
+			max-width: calc(100% / 4);
+		}
+	}
+	@include breakpoint(max-lg) {
+		justify-content: center;
+		> div {
+			max-width: 240px;
+		}
+	}
+}
+/*Doctor Section Ends Here*/
