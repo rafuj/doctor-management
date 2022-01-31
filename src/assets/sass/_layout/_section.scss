@@ -338,6 +338,7 @@
 	border: none;
 	border-bottom: 1px solid $border-color;
 	@include border-radius(0 !important);
+	background: transparent;
 	.accordion-header {
 		padding: 0;
 		background: transparent !important;
@@ -346,6 +347,9 @@
 		justify-content: space-between;
 		cursor: pointer;
 		border: none;
+		@include breakpoint(max-md) {
+			padding: 10px 0;
+		}
 		button {
 			box-shadow: none !important;
 			font-size: 18px;

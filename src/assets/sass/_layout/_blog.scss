@@ -1,0 +1,50 @@
+/*Blog Section*/
+.post__item {
+	&-thumb {
+		@include border-radius(10px);
+		overflow: hidden;
+		img {
+			width: 100%;
+		}
+		margin-bottom: 10px;
+	}
+	.date {
+		display: block;
+		margin-bottom: 12px;
+	}
+	.post__title {
+		font-size: 16px;
+		margin-bottom: 12px;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+.blogSlider {
+	padding-bottom: 95px;
+	.swiper-button-prev,
+	.swiper-button-next {
+		position: absolute;
+		bottom: 0;
+		top: unset;
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		text-align: center;
+		background: $base;
+		@include border-radius(50%);
+		&::after {
+			font-size: 20px;
+			color: $white;
+		}
+	}
+	.swiper-button-prev {
+		left: calc(50% - 45px);
+	}
+	.swiper-button-next {
+		right: calc(50% - 45px);
+	}
+	@include breakpoint(max-xl) {
+		padding-bottom: 70px;
+	}
+}
