@@ -16,7 +16,7 @@ const Faqs = () => {
 				title="Frequently Asked Questions"
 				text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
 			/>
-			<Row className="gy-4 justify-content-between align-items-center position-relative">
+			<Row className="justify-content-between align-items-center position-relative">
 				<Col md={5}>
 					<div className="faq__thumb">
 						<img src={faqThumb} alt="faq" />
@@ -34,13 +34,13 @@ const Faqs = () => {
 								</Accordion.Item>
 							))}
 					</Accordion>
-					<div className="mt-4 text-end">
-						<Button href="/" className="btn--base mt-4">
-							View All FAQ's
-						</Button>
-					</div>
 				</Col>
 			</Row>
+			<div className="text-end mt-3">
+				<Button href="/" className="btn--base mt-3">
+					View All FAQ's
+				</Button>
+			</div>
 		</Section>
 	);
 };
