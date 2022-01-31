@@ -61,7 +61,7 @@
 }
 .about__content {
 	.btn--base {
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 	&.style__two {
 		max-width: 502px;
@@ -157,3 +157,69 @@
 	}
 }
 /*Step Section Ends Here*/
+/*Pharmacy Section Starts Here*/
+.pharmacy__item {
+	border: 1px solid $border-color;
+	border-radius: 10px;
+	padding: 29px 25px;
+	&-title {
+		color: $base;
+		margin-bottom: 10px;
+	}
+	&-content {
+		display: flex;
+		.icon {
+			width: 40px;
+			height: 40px;
+			line-height: 37px;
+			text-align: center;
+			font-size: 20px;
+			@include border-radius(50%);
+			background: $base;
+			color: $white;
+		}
+		.text {
+			width: calc(100% - 40px);
+			padding-left: 22px;
+		}
+	}
+}
+@include breakpoint(max-md) {
+	.pt-max-md-0 {
+		padding-top: 0 !important;
+	}
+	.pb-max-md-0 {
+		padding-bottom: 0 !important;
+	}
+}
+@include breakpoint(max-sm) {
+	.pt-max-sm-0 {
+		padding-top: 0 !important;
+	}
+	.pb-max-sm-0 {
+		padding-bottom: 0 !important;
+	}
+}
+/*Pharmacy Section Ends Here*/
+/*Service Section Starts Here*/
+.service__thumb {
+	img {
+		max-width: 100%;
+	}
+}
+.serviceTabMenu {
+	li {
+		font-size: 18px;
+		line-height: 28px;
+		font-weight: 500;
+		text-transform: capitalize;
+		cursor: pointer;
+		&:not(:last-child) {
+			margin-bottom: 8px;
+		}
+		&.active {
+			color: $base;
+		}
+	}
+}
+/*Service Section Ends Here*/

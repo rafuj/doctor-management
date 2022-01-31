@@ -37,6 +37,9 @@
 .nav-header {
 	background: #ffffff;
 	box-shadow: 0px 1px 27px rgba(0, 0, 0, 0.15);
+	position: sticky;
+	top: 0;
+	z-index: 999;
 	.navbar {
 		min-height: 80px;
 	}
@@ -45,7 +48,7 @@
 		padding: 7px 20px;
 		font-size: 14px;
 		font-weight: 400;
-		@include border-radius(16px)
+		@include border-radius(16px);
 	}
 }
 .language--group {
