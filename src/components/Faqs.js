@@ -7,7 +7,7 @@ import Section from "./Section";
 import SectionHeader from "./SectionHeader";
 const Faqs = () => {
 	return (
-		<Section className="pb-120 overflow-hidden position-relative">
+		<Section className="pb-120 overflow-hidden position-relative pb-max-md-0">
 			<div className="faq__shape">
 				<img src={faq__shape} alt="faq-shape" />
 			</div>
@@ -16,8 +16,8 @@ const Faqs = () => {
 				title="Frequently Asked Questions"
 				text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
 			/>
-			<Row className="justify-content-between align-items-center position-relative">
-				<Col md={5} className="d-none d-md-block">
+			<Row className="gy-4 justify-content-between align-items-center position-relative">
+				<Col md={5}>
 					<div className="faq__thumb">
 						<img src={faqThumb} alt="faq" />
 					</div>

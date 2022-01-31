@@ -1,8 +1,8 @@
 import React from "react";
 
-const AppBtn = ({ image, link }) => {
+const AppBtn = ({ image, link, ...rest }) => {
 	return (
-		<a href={link} className="app-btn">
+		<a href={link} className="app-btn" {...rest}>
 			<img src={image} alt="app-btn" />
 		</a>
 	);

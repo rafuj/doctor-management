@@ -1,0 +1,153 @@
+/*Footer Section*/
+.footer-bottom {
+	font-weight: 500;
+	padding: 12px 0 22px;
+}
+.address__bar {
+	li {
+		svg {
+			color: $base;
+			margin-right: 10px;
+		}
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+}
+.footer__top {
+	border-top: 1px solid $border-color;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 42px 0 0;
+	&-left {
+		width: 100%;
+		max-width: calc(100% - 735px);
+		padding-right: 30px;
+		.footer__logo {
+			margin-bottom: 22px;
+			display: inline-block;
+			img {
+				max-width: 100%;
+			}
+		}
+		p {
+			max-width: 273px;
+			margin-bottom: 35px;
+		}
+	}
+	&-right {
+		width: 735px;
+	}
+	@include breakpoint(max-xl) {
+		&-left {
+			max-width: 300px;
+		}
+		&-right {
+			width: calc(100% - 300px);
+		}
+	}
+	@include breakpoint(max-lg) {
+		&-left {
+			max-width: 100%;
+			margin-bottom: 35px;
+		}
+		&-right {
+			width: 100%;
+		}
+		.footer__social-area {
+			margin-top: 20px;
+		}
+		padding-bottom: 30px;
+	}
+	.footer__title {
+		font-weight: 500;
+		text-transform: capitalize;
+		margin-bottom: 17px;
+	}
+}
+footer {
+	position: relative;
+	.footer__shape {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		max-width: 650px;
+		z-index: -1;
+		img {
+			max-width: 100%;
+		}
+	}
+	@include breakpoint(lg) {
+		.footer__wrapper {
+			margin-top: 62px;
+		}
+	}
+}
+.footer__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -5px -20px;
+	&-links {
+		width: calc(100% / 3);
+		padding: 0 5px 20px;
+		li {
+			a {
+				text-decoration: none;
+				color: $title;
+				&:hover {
+					color: $base;
+				}
+				svg {
+					color: $base;
+				}
+			}
+			&:not(:last-child) {
+				margin-bottom: 5px;
+			}
+		}
+		@include breakpoint(xl) {
+			font-size: 18px;
+			li {
+				&:not(:last-child) {
+					margin-bottom: 10px;
+				}
+			}
+		}
+		@include breakpoint(max-sm) {
+			flex-grow: 1;
+		}
+	}
+}
+.social-icons {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -5px;
+	li {
+		a {
+			color: $base;
+			line-height: 1;
+			font-size: 20px;
+			padding: 5px;
+		}
+	}
+}
+.footer__social-area {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 50px;
+	&-item {
+		margin-top: 20px;
+	}
+	.app__btns {
+		margin: -12px;
+		.app-btn {
+			margin: 12px;
+		}
+	}
+	.app-btn--title {
+		font-weight: 700;
+	}
+}
