@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./components/About";
 import Banner from "./components/Banner";
+import CallToAction from "./components/CallToAction";
 import ExpertDoctors from "./components/ExpertDoctors";
 import Feature from "./components/Feature";
 import NavBar from "./components/NavBar";
@@ -21,6 +22,7 @@ const App = () => {
 			<PopularFarmacy />
 			<Services />
 			<ExpertDoctors />
+			<CallToAction />
 		</>
 	);
 };

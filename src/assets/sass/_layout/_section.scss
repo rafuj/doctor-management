@@ -266,3 +266,26 @@
 	}
 }
 /*Doctor Section Ends Here*/
+/*CTAs Section Starts Here*/
+.cta__shape {
+	position: absolute;
+	right: 0;
+	left: calc(50% + 410px);
+	bottom: -130px;
+	img {
+		min-width: 100%;
+	}
+	@include breakpoint(max-xxl) {
+		left: calc(50% + 180px);
+		@include breakpoint(xl) {
+			bottom: -54px;
+		}
+	}
+	@include breakpoint(xxl) {
+		left: calc(50% + 260px);
+	}
+	@include breakpoint(max-md) {
+		display: none;
+	}
+}
+/*CTAs Section Ends Here*/
